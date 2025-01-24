@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.16)  24 JAN 2025 13:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.16)  24 JAN 2025 18:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -426,27 +426,86 @@ File: figures/05/OutputNN.png Graphic file (type png)
 <use figures/05/OutputNN.png>
 Package pdftex.def Info: figures/05/OutputNN.png  used on input line 86.
 (pdftex.def)             Requested size: 273.8371pt x 117.82315pt.
-) (Sections/06-NeuralNetworks.tex [7 <./figures/05/Neuron.png> <./figures/05/OutputNN.png>]) (Sections/07-FeatureEngineering.tex) (Sections/08-SVM.tex) (Sections/09-GaussianProcesses.tex) (Sections/10-DimensionalityReduction.tex) (Sections/11-ClusterAnalysis.tex) (Sections/12-GMMandEM.tex) (Sections/13-ReinforcementLearning.tex) (Sections/14-GenerativeAI.tex)
-Underfull \vbox (badness 1005) has occurred while \output is active []
+) (Sections/06-NeuralNetworks.tex [7 <./figures/05/Neuron.png> <./figures/05/OutputNN.png>]
+<figures/06/1DConv.png, id=68, 495.8525pt x 250.43562pt>
+File: figures/06/1DConv.png Graphic file (type png)
+<use figures/06/1DConv.png>
+Package pdftex.def Info: figures/06/1DConv.png  used on input line 55.
+(pdftex.def)             Requested size: 273.8371pt x 138.30556pt.
+<figures/06/2DConv.png, id=69, 476.27937pt x 334.75063pt>
+File: figures/06/2DConv.png Graphic file (type png)
+<use figures/06/2DConv.png>
+Package pdftex.def Info: figures/06/2DConv.png  used on input line 62.
+(pdftex.def)             Requested size: 273.8371pt x 192.475pt.
 
- [8] (c:\Git\MachLe2024\build\main.aux)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/06/Pooling.png, id=70, 543.53062pt x 209.78375pt>
+File: figures/06/Pooling.png Graphic file (type png)
+<use figures/06/Pooling.png>
+Package pdftex.def Info: figures/06/Pooling.png  used on input line 68.
+(pdftex.def)             Requested size: 273.8371pt x 105.69507pt.
+) (Sections/07-FeatureEngineering.tex [8 <./figures/06/1DConv.png> <./figures/06/2DConv.png> <./figures/06/Pooling.png>] [9]
+<figures/07/TextEmbeddings.png, id=80, 699.11188pt x 140.525pt>
+File: figures/07/TextEmbeddings.png Graphic file (type png)
+<use figures/07/TextEmbeddings.png>
+Package pdftex.def Info: figures/07/TextEmbeddings.png  used on input line 122.
+(pdftex.def)             Requested size: 273.8371pt x 55.04253pt.
+<figures/07/STFT.png, id=81, 760.8425pt x 312.16624pt>
+File: figures/07/STFT.png Graphic file (type png)
+<use figures/07/STFT.png>
+Package pdftex.def Info: figures/07/STFT.png  used on input line 139.
+(pdftex.def)             Requested size: 273.8371pt x 112.35594pt.
+<figures/07/MFCC.png, id=82, 848.16875pt x 313.67188pt>
+File: figures/07/MFCC.png Graphic file (type png)
+<use figures/07/MFCC.png>
+Package pdftex.def Info: figures/07/MFCC.png  used on input line 146.
+(pdftex.def)             Requested size: 273.8371pt x 101.27206pt.
+) (Sections/08-SVM.tex
+<figures/08/SVM.png, id=83, 461.22313pt x 318.18875pt>
+File: figures/08/SVM.png Graphic file (type png)
+<use figures/08/SVM.png>
+Package pdftex.def Info: figures/08/SVM.png  used on input line 3.
+(pdftex.def)             Requested size: 273.8371pt x 188.91438pt.
+ [10 <./figures/07/TextEmbeddings.png> <./figures/07/STFT.png> <./figures/07/MFCC.png> <./figures/08/SVM.png>]
+<figures/08/SoftMargin.png, id=91, 670.505pt x 295.1025pt>
+File: figures/08/SoftMargin.png Graphic file (type png)
+<use figures/08/SoftMargin.png>
+Package pdftex.def Info: figures/08/SoftMargin.png  used on input line 70.
+(pdftex.def)             Requested size: 273.8371pt x 120.51999pt.
+<figures/08/SoftMarginExample.png, id=92, 218.8175pt x 260.975pt>
+File: figures/08/SoftMarginExample.png Graphic file (type png)
+<use figures/08/SoftMarginExample.png>
+Package pdftex.def Info: figures/08/SoftMarginExample.png  used on input line 89.
+(pdftex.def)             Requested size: 82.15196pt x 97.98087pt.
+<figures/08/CExamples.png, id=93, 400.49625pt x 266.9975pt>
+File: figures/08/CExamples.png Graphic file (type png)
+<use figures/08/CExamples.png>
+Package pdftex.def Info: figures/08/CExamples.png  used on input line 102.
+(pdftex.def)             Requested size: 273.8371pt x 182.56624pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./figures/08/SoftMargin.png> <./figures/08/SoftMarginExample.png>]) (Sections/09-GaussianProcesses.tex) (Sections/10-DimensionalityReduction.tex) (Sections/11-ClusterAnalysis.tex) (Sections/12-GMMandEM.tex) (Sections/13-ReinforcementLearning.tex) (Sections/14-GenerativeAI.tex) [12 <./figures/08/CExamples.png>] (c:\Git\MachLe2024\build\main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 10126 strings out of 474486
- 221257 string characters out of 5739979
- 1943542 words of memory out of 5000000
- 32251 multiletter control sequences out of 15000+600000
+ 10196 strings out of 474486
+ 223347 string characters out of 5739979
+ 1944542 words of memory out of 5000000
+ 32321 multiletter control sequences out of 15000+600000
  572599 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,8n,80p,355b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:\Git\MachLe2024\build\main.pdf (8 pages, 2171324 bytes).
+Output written on c:\Git\MachLe2024\build\main.pdf (12 pages, 5169575 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
+ 472 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

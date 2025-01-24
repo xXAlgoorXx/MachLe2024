@@ -41,12 +41,32 @@ Training Terms:
 
  \subsection{Convolutional Neural Networks (CNN)}
  Idea: nearby pixels in an image are correlated - using shared parameters across whole input.
+ A convolution operation is determined:
+ \begin{itemize}
+     \item stride (kernel shift)
+     \item kernel size (typically odd)
+     \item dilation (number of zero weights in kernel)
+ \end{itemize}
+ Convolutional Layer: apply convolution, add bias, apply activation function.
+
+ Channels(feature maps, activation maps): mulitple convolutions applied to the input in parallel.
 \subsubsection{CNN 1D}
+\begin{figure}[!h]
+    \includegraphics[width = \columnwidth]{figures/06/1DConv.png}
+ \end{figure}
 1D convolution is a weighted sum of nearby inputs.
-A convolution operation is determined:
-\begin{itemize}
-    \item stride (kernel shift)
-    \item kernel size (typically odd)
-    \item dilation (number of zero weights in kernel)
-\end{itemize}
-Convolutional Layer: apply convolution, add bias, apply activation function
+
+\subsubsection{CNN 2D}
+Using 2D kernles, plus a bias and a activation function.
+\begin{figure}[!h]
+    \includegraphics[width = \columnwidth]{figures/06/2DConv.png}
+ \end{figure}
+
+ \subsubsection{Pooling}
+ Reduces Dimensions by min,max or average pooling a layer.
+ \begin{figure}[!h]
+    \includegraphics[width = \columnwidth]{figures/06/Pooling.png}
+ \end{figure}
+ \subsubsection{Transpose Convolution}
+ Upsampling: Each input contributed multiple times to the output.
+ Useful when output is an image.
