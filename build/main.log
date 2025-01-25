@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.16)  24 JAN 2025 22:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.16)  25 JAN 2025 13:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -505,24 +505,76 @@ File: figures/10/LLE.png Graphic file (type png)
 <use figures/10/LLE.png>
 Package pdftex.def Info: figures/10/LLE.png  used on input line 79.
 (pdftex.def)             Requested size: 273.8371pt x 268.12169pt.
-) (Sections/11-ClusterAnalysis.tex) (Sections/12-GMMandEM.tex) (Sections/13-ReinforcementLearning.tex) (Sections/14-GenerativeAI.tex) [14 <./figures/10/LLE.png>] (c:\Git\MachLe2024\build\main.aux)
+<figures/10/Isomap.png, id=113, 827.09pt x 304.63812pt>
+File: figures/10/Isomap.png Graphic file (type png)
+<use figures/10/Isomap.png>
+Package pdftex.def Info: figures/10/Isomap.png  used on input line 86.
+(pdftex.def)             Requested size: 273.8371pt x 100.86092pt.
+ [14 <./figures/10/LLE.png> <./figures/10/Isomap.png>]) (Sections/11-ClusterAnalysis.tex
+<figures/11/ClusteringOverview.png, id=119, 384.43625pt x 174.15062pt>
+File: figures/11/ClusteringOverview.png Graphic file (type png)
+<use figures/11/ClusteringOverview.png>
+Package pdftex.def Info: figures/11/ClusteringOverview.png  used on input line 4.
+(pdftex.def)             Requested size: 273.8371pt x 124.05702pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 41.
+
+<figures/11/ExampleHCA.png, id=120, 620.3175pt x 245.91875pt>
+File: figures/11/ExampleHCA.png Graphic file (type png)
+<use figures/11/ExampleHCA.png>
+Package pdftex.def Info: figures/11/ExampleHCA.png  used on input line 52.
+(pdftex.def)             Requested size: 273.8371pt x 108.5573pt.
+<figures/11/Dendrogram.png, id=121, 268.00125pt x 158.5925pt>
+File: figures/11/Dendrogram.png Graphic file (type png)
+<use figures/11/Dendrogram.png>
+Package pdftex.def Info: figures/11/Dendrogram.png  used on input line 73.
+(pdftex.def)             Requested size: 273.8371pt x 162.0453pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/11/KMeansExample.png, id=122, 823.57687pt x 145.04187pt>
+File: figures/11/KMeansExample.png Graphic file (type png)
+<use figures/11/KMeansExample.png>
+Package pdftex.def Info: figures/11/KMeansExample.png  used on input line 79.
+(pdftex.def)             Requested size: 273.8371pt x 48.2247pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15 <./figures/11/ClusteringOverview.png> <./figures/11/ExampleHCA.png>]) (Sections/12-GMMandEM.tex [16 <./figures/11/Dendrogram.png> <./figures/11/KMeansExample.png>]
+Underfull \hbox (badness 1946) in paragraph at lines 88--89
+[]\T1/cmr/m/n/10 E-Step: Esti-ma-te ex-pec-ted va-lues of va-ria-bles, as-s-u-
+ []
+
+) (Sections/13-ReinforcementLearning.tex
+<figures/13/AgentEnvironment.png, id=134, 763.85374pt x 326.72063pt>
+File: figures/13/AgentEnvironment.png Graphic file (type png)
+<use figures/13/AgentEnvironment.png>
+Package pdftex.def Info: figures/13/AgentEnvironment.png  used on input line 3.
+(pdftex.def)             Requested size: 273.8371pt x 117.12578pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17]) (Sections/14-GenerativeAI.tex) [18 <./figures/13/AgentEnvironment.png>] (c:\Git\MachLe2024\build\main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 10225 strings out of 474486
- 223965 string characters out of 5739979
+ 10267 strings out of 474486
+ 225394 string characters out of 5739979
  1947542 words of memory out of 5000000
- 32345 multiletter control sequences out of 15000+600000
+ 32387 multiletter control sequences out of 15000+600000
  575087 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,10n,80p,355b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:\Git\MachLe2024\build\main.pdf (14 pages, 5491286 bytes).
+ 73i,11n,80p,359b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\lukas.schoepf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/lukas.schoepf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on c:\Git\MachLe2024\build\main.pdf (18 pages, 6474927 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
+ 541 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

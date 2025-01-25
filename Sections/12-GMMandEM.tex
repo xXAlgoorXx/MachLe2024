@@ -1,1 +1,113 @@
 \section{Gaussian Mixture Models and EM}
+\subsection{Metrics to evaluate Clustering}
+\subsubsection*{Cluster Inertia W}
+The within-cluster inertia \(W\) of the partitionn\(C_k\) is the sum of the inertia of the clusters and measures then the heterogeneity within the clusters.
+\[
+W = \sum_{k = 1}^{K} I(C_k) \quad I(C_k) = \sum_{i\in C_k}||x_i - \mu_k||^2
+\]
+\subsubsection*{NMI: Normalized Mutual Information}
+Mutual information is a function that measures the agreement of the two assignments, ignoring permutations.
+\[
+\text{NMI} = \frac{2\cdot I(Y|C)}{H\left[Y\right] + H\left[C\right]} \quad I(Y|C) = H\left[Y\right] - \sum_{k} H\left[Y|C\right]
+\]
+\(I\left[Y|C\right]\): mutual information between \(Y\) and \(C\)
+
+\(H\left[Y\right]\): Entropy of class labels \(Y\)
+
+\(H\left[C\right]\): Entropy of class labels \(C\)
+
+\subsubsection*{BIC: Bayesian Information Criterium}
+Can measure the efficiency of the parameterized model in terms of prediciting data.
+It penalizes the complexity of the model\(B\).
+
+\[
+BIC = -2\ln(\mathcal{L}) + B \cdot \ln(n) = W + k \cdot(d+1)\ln(n)
+\]
+
+\(\mathcal{L}\): the maximized value of the likelihood function of the model \(\mathcal{M}\), \(\mathcal{L} = p(x|\hat{\theta},\mathcal{M})\) where \(\hat{\theta}\) are the ML estimates parameters.
+
+\(x\): observed data (dimensions \(d\))
+
+\(n\): number of data points
+
+\(B\): number of parameters estimated by the model \(\mathcal{M}:B = K \cdot (d+1)\)
+
+\(W\): within-cluster inertia \(W\) = RSS(Residual Sum of Squares)
+
+\subsection{Density based Clustering (DBSCAN)}
+DBSCAN = density-based spatial clustering of applications with noise.
+
+The idea if DBSCAN is that clusters from dense regions in that data and are seperated by relatively empty areas.
+
+Advantages of DBSCAN:
+\begin{itemize}
+    \item The user can not set the number of clusters a priori
+    \item DBSCAN is able to capture clusters with complex shapes
+    \item if identifies points that do not belong to any of the clusters
+\end{itemize}
+The DBSCAN procedure is slower than the agglomerative clustering and k-Means, but scales relatively well for large data sets.
+\subsubsection{How DBSCAN works}
+2 Parameters: min\_samples and eps.
+
+If at least min\_samples data points are within the distance eps to a given point, this data point is classified as a core object.
+Core objects that are closer than eps to each other are assigned to the same cluster.
+
+At the beginning, the algorithm selects any starting point.
+Then it finds all points at distance eps or closer to this point.
+If less than min\_samples points are found within the distance eps to the starting point, this point will be classified as noise(it does not belong to any cluster).
+
+If there is more as min\_sampels points at a distance of eps, the point is used as core object and receives a new cluster designation.
+
+\subsubsection{Advantages of DBSCAN}
+\begin{itemize}
+    \item The user can not set the number of clusters a priori
+    \item DBSCAN is able to capture clusters with complex shapes
+    \item It identifies points that do not belong to any of the clusters
+\end{itemize}
+\subsection{Gaussian Mixture Models (GMM)}
+Mixture Models approximate an arbitray distribution by a linear combination of a simpler, well-behaved distribution.
+
+The Gaussian Mixture Models (GMM):
+\begin{itemize}
+    \item Modeled by a weighte sum of \(N\) multivariante Gaussians
+    \item The Gaussians parameters can be estimated effeciently using the EM algorithm
+\end{itemize}
+\[
+p(x|\pi_i,\mu_i,\Sigma_i) \sim \sum_{i = 1}^{K}\pi_i \mathcal{N}(\mu_i,\Sigma_i)
+\]
+The weights sum up to one (probability to belong to cluster \(k\))
+\[
+\sum_{k = 1}^{K} = 1
+\]
+
+GMM are soft clustering.
+
+\subsubsection{Expectation Maximization(EM)}
+\begin{enumerate}
+    \item Start with a random initial hypothesis. Pretend to knwo the parameters \(\mu,\sigma^2\) of the 2 Gaussians (Place 2 Gaussians somewhere)
+    \item E-Step: Estimate expected values of variables, assuming the current hypothesis holds. Compute probabilities \(\gamma_{ik}\).(which data point belongs to wich Gaussian)
+    \item M-Step: Calculate new Maximum likelihood (ML) estimate of hypothesis, assuming the expected values from step 2 hold. Calculate the \(\mu_k,\sigma_k^2\), givem the currently assigned membership.(Update Gaussians according to data points of class)
+    \item Repeat with step 2 until convergence
+\end{enumerate}
+\[
+\mu_k = \sum_{i = 1}^{K} \gamma_{ik}\cdot x_i \quad \sigma_k^2 = \sum_{i = 1}^{N} \gamma_{ik}\cdot (x_i-\mu_k)^2
+\]
+\subsubsection{Custering with Gaussians}
+K-means is equivalent to assuming that the data came from \(K\) spherically symmetric Gaussians.
+Instead of isotropic covarinaces \(I \cdot \sigma_k^2\), we know use full covarinace matricies \(\Sigma_k\) to model elliptical clusters.
+\[
+p(\mathbf{X|Z,\mu,\Sigma}) = \prod_{n = 1}^{N}\prod_{k = 1}^{K}\left[\mathcal{N}(\mathbf{x}_n|\mathbf{\mu}_k,\mathbf{\Sigma}_k)\right]^{z_{nk}}
+\]
+
+\subsubsection{EM-Algorithm for GMM}
+Compute the cluster assignments(E-steps, Bayes rule with \(\pi_k^{(t)}\)):
+\[
+\gamma_{nk}^{(t)} = p\left(z_{nk} = k|\mathbf{\theta}^{(t)},\mathbf{x}_n\right) = \frac{\pi_k^{(t)}\mathcal{N}\left(\mathbf{x}_n|\mathbf{\mu}_k^{(t)},\mathbf{\Sigma}_k^{(t)}\right)}{\sum_{k = 1}^{K}\pi_k^{(t)}\mathcal{N}\left(\mathbf{x}_n|\mathbf{\mu}_k^{(t)},\mathbf{\Sigma}_k^{(t)}\right)}
+\]
+Update the cluster centers, covarinaces and probabilities(M-step, max.likelihood appr.):
+\[
+\mathbf{\mu}_k^{(t+1)} = \frac{\sum_n \gamma_{nk}^{(t)}\mathbf{x}_n}{\sum_{n} \gamma_{nk}^{(t)}} = \frac{\sum_n \gamma_{nk}^{(t)}\mathbf{x}_n}{Z^{(t)}} \quad \pi_k^{(t+1)} = \frac{1}{N}\sum_n \gamma_{nk}^{(t)}
+\]
+\[
+\mathbf{\Sigma}_k^{(t+1)} = \frac{1}{Z^{(t)}}\cdot\sum_{N}\gamma_{nk}^{(t)}\left(\mathbf{x}_n - \mathbf{\mu}_k^{(t+1)}\right)\left(\mathbf{x}_n - \mathbf{\mu}_k^{(t+1)}\right)^T
+\]

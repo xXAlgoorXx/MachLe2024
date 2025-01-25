@@ -79,4 +79,48 @@ Finding the low \(d\)-dimensional data representation \(Y\) amounts to minimizin
     \includegraphics[width = \columnwidth]{figures/10/LLE.png}
 \end{figure}
 \subsubsection{Isomap: Isometric mapping}
+A non-linear method for dimensionality reduction.
+Finds the map that preserves the global, non-linear geometry of the data by preserving the geodesic manifold interpoint distances.
+Geodesic: Shortest curve along the manifold connecting two points.
+\begin{figure}[!h]
+    \includegraphics[width = \columnwidth]{figures/10/Isomap.png}
+\end{figure}
+
+The basic steps are:
+\begin{enumerate}
+    \item For each object, find a small set of neighboring objects and their distance.
+    \item Compute all-pairs shortest paths on the above neighborhood graph.
+    \item Run multidimensional scaling using the matrix of shortest-path distances.
+\end{enumerate}
+Advantages:
+\begin{itemize}
+    \item Nonlinear
+    \item Non-iterative
+    \item Globally optimal
+    \item Parameters: \(k\) or \(\eta\)(chosen fixed radius)
+\end{itemize}
+Disadvantages:
+\begin{itemize}
+    \item Graph disctreteness overestimates the geodesic distance
+    \item  \(k\) must be high to avoid linear shortcuts near regions of high surface curvature
+\end{itemize}
 \subsubsection{t-SNE:t-distributed stochastic neighbor embedding}
+t-SNE is a manifold learning algorithem that constructs a probability distribution \(p\) over the dataset \(X\), and then another probability distribution \(q\) in a lower dimensional data space \(Y\), making both as close as possible
+
+Baisc Steps:
+\begin{enumerate}
+    \item In the high dimensional space \(X\), create a probability distribution \(p_{i|j}\) that dictates the relationships between various neighboring points \(x_i\) and \(x_j\).
+    \item It then tries to recreate a probability distribution \(q_{i|j}\) in a low dimensional space \(Y\) that follows that probability distribution \(p_{i|j}\) as best as possible (KL-divergence as loss function).
+\end{enumerate}
+
+\subsubsection*{Math}
+\[
+p_{i|j} = \frac{\exp\left(-\frac{||x_i-x_j||^2}{2\sigma_i^2}\right)}{\sum_{k\neq i}\exp\left(-\frac{||x_i-x_k||^2}{2\sigma_i^2}\right)}
+\]
+\[
+q_{i|j} = \frac{e^{-||y_i-y_j||^2}}{\sum_{k\neq i}e^{-||y_i-y_k||^2}}
+\]
+The Kullback-Leibler (KL) divergence is a measure of how different two probability distributions are from one another (also called relative entropy):
+\[
+KL(P|Q) = \sum_{i \neq q}p_{i|j} \ln(\frac{p_{i|j}}{q_{i|j}})
+\]
