@@ -122,6 +122,8 @@ K_{ij} = K(x_i,x_j) = \langle \phi(x_i),\phi(x_j) \rangle = \langle z_i, z_j \ra
 \]
 \(K_{ij}\) is calculated fast, \(z_i = \phi(x_i)\) is hard to calculate.
 Leads to the same optimization problem as the original dual optimization problem.
+
+
 \subsubsection{Primal Form of the SVM}
 \[
 \min_{\mathbf{w},b,\mathbf{\xi}}\frac{1}{2}||w||_2^2 + C \sum_{i = 1}^{n} \xi_i
@@ -142,4 +144,15 @@ A larger \(C\) encourages a narrower margin but penalizes misclassifications mor
     \item Kernels can be used for an SVM because of the scalar product in the dual form, but can also be used elsewhere - they are not tied to the SVM formalism
     \item Kernels apply also to objects that are not vectors, e.g. to objects like histograms.
 \end{itemize}
+
+\subsection{Most important information}
+\begin{itemize}
+    \item maximal margin classifier: Linearly seperable Data
+    \item SVC: almost linearly seperable data, uses margins
+    \item SVM: not linearly seperable data, uses Kernels to sperate data in higher dimensional space
+\end{itemize}
+\subsubsection*{Mercer's theorem}
+If  \(K(x,y)\) statisfies Mercer's conditions, it defines a inner product in a higher-dimensional space.
+This allows implicit mapping into higher dimensions without explicitly computing the transformation.
+\(K\) must be positive semi-definite(eingenvalus \(\ge 0\)).
 

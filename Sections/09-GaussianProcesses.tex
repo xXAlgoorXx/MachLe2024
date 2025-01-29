@@ -96,3 +96,29 @@ Some possible Kernels:
     k(x,x') = \sigma^2_0 + x\cdot x'
     \]
 \end{itemize}
+
+\subsection{Important information}
+\begin{itemize}
+    \item MAP assignment: The Most porbable A Posteriori (MAP) setting is thta which maximises the posteriori. It is the most probable set of parameters \(\theta\) given the Data \(\mathcal{D}\) and model class \(\mathcal{M}\)
+    \[
+    \hat{\theta}_{\text{MAP}} = \arg\max_\theta\{p(\theta|\mathcal{D},\mathcal{M})\} = \arg\max_\theta \{p(\theta,\mathcal{D}|\mathcal{M})\}
+    \]
+    \item Max. Likelihood assignment: when \(p(\theta|M) = \)const. It is the estimate for \(\theta\) that maximises the probability of observing the data \(\mathcal{D}\) given the model \(M\).
+    \[
+    \hat{\theta}_{\text{ML}} = \arg\max_\theta\{p(\mathcal{D}|\theta,\mathcal{M})\}
+    \]
+\end{itemize}
+Matrix inverse:
+\[
+A = 
+\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}
+\qquad
+A^{-1} = \frac{1}{\text{det}(A)}
+\begin{bmatrix}
+d & -b \\
+-c & a
+\end{bmatrix}
+\]
